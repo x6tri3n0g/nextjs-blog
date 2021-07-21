@@ -2,6 +2,12 @@
 
 > WESTAY <---> StayOn <---> 고방
 
+## 빌드환경 세팅(Front)
+
+-   ESLint/Prettier
+-   babel 설정
+-   styling: `@linaria/react`(styled-component)
+
 ## OKR
 
 -   _Object_ : 9월 중순까지 WESTAY 개발완료, 9월말 운영(Real) 배포
