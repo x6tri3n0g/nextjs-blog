@@ -3,9 +3,12 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import Layout from '/components/layout';
+// 절대 경로 설정하기: https://pythonq.com/so/next.js/812799
+
 export default function FirstPost() {
 	return (
-		<>
+		<Layout>
 			<Head>
 				<title>First Post</title>
 			</Head>
@@ -21,6 +24,6 @@ export default function FirstPost() {
 					<a>Back to home</a>
 				</Link>
 			</h2>
-		</>
+		</Layout>
 	);
 }
