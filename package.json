@@ -3,9 +3,11 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "NODE_PATH=. next dev",
-		"build": "NODE_PATH=. next build",
-		"start": "NODE_PATH=. next start"
+		"dev": "next dev",
+		"build:dev": "env-cmd -f ./env/development.env next build",
+		"build:production": "env-cmd -f ./env/production.env next build",
+		"start:dev": "env-cmd -f ./env/development.env next start",
+		"start:production": "env-cmd -f ./env/production.env next start"
 	},
 	"dependencies": {
 		"@babel/core": "^7.14.6",
@@ -16,6 +18,7 @@
 		"babel-plugin-module-resolver": "^4.1.0",
 		"classnames": "^2.3.1",
 		"date-fns": "^2.22.1",
+		"env-cmd": "^10.1.0",
 		"gray-matter": "^4.0.3",
 		"next": "^11.0.0",
 		"postcss-flexbugs-fixes": "^5.0.2",
